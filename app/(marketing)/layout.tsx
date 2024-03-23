@@ -1,9 +1,9 @@
-import React, { FC } from "react";
-import { MarketingLayoutProps } from "./type";
 import { Navbar } from "./_components/navbar";
 import { Footer } from "./_components/footer";
+import { FC } from "react";
+import { WithChildren } from "@/types/WithChildren";
 
-const MarketingLayout: FC<MarketingLayoutProps> = ({ children }) => {
+const MarketingLayout: FC<WithChildren> = ({ children }) => {
   return (
     <div className="h-full bg-slate-100">
       <Navbar/>
